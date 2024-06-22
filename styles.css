@@ -1,0 +1,149 @@
+/* Apply the imported Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #ee7752, #eba0bd, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #fff, #333, #fff);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.verse,
+.chorus {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally */
+    text-align: center; /* Center align text within sections */
+}
+
+.verse p {
+    animation: flicker 0.5s ease-in-out infinite alternate; /* Apply animation to verse paragraphs */
+}
+
+.chorus p {
+    animation: flicker 0.5s ease-in-out infinite alternate; /* Apply animation to chorus paragraphs */
+}
+
+.verse {
+    background: rgba(245, 245, 245, 0.556);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chorus {
+    background: whitesmoke;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Highlight class for specific lines */
+.highlight {
+    background-color: #ffb6c1;
+    font-weight: bold;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+        text-shadow: 2px 2px 10px #cdff29;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 20px #2962ff;
+    }
+}
+.verse p {
+    font-family: 'Merriweather', serif; /* Custom serif font for verses */
+}
+
+.chorus p {
+    font-family: 'Open Sans', sans-serif; /* Custom sans-serif font for choruses */
+}
